@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&family=Public+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --maroon: #5a1a1a;
+    --contractor-black: #0e0e0e;
+    --cream: #efe3c8;
+    --restoration-gray: #4a4a4a;
+    --structural-gray: #d2d2d2;
+    --mitigation-graphite: #1c1c1c;
+  }
+
+  body {
+    font-family: "Public Sans", sans-serif;
+    color: var(--contractor-black);
+    background: white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Libre Bodoni", serif;
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .text-maroon {
+    color: var(--maroon);
+  }
+
+  .bg-maroon {
+    background-color: var(--maroon);
+  }
+
+  .text-contractor-black {
+    color: var(--contractor-black);
+  }
+
+  .bg-contractor-black {
+    background-color: var(--contractor-black);
+  }
+
+  .text-cream {
+    color: var(--cream);
+  }
+
+  .bg-cream {
+    background-color: var(--cream);
+  }
+
+  .text-restoration-gray {
+    color: var(--restoration-gray);
+  }
+
+  .bg-restoration-gray {
+    background-color: var(--restoration-gray);
+  }
+
+  .bg-structural-gray {
+    background-color: var(--structural-gray);
+  }
+
+  .bg-mitigation-graphite {
+    background-color: var(--mitigation-graphite);
+  }
+}

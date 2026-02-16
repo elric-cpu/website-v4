@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Residential Maintenance Pricing Sheet | Benson Home Solutions</title>
+    <meta
+      name="description"
+      content="Printable pricing sheet and tier comparison for Benson Home Solutions residential maintenance plans."
+    />
+    <link
+      rel="canonical"
+      href="/landing/residential-maintenance-pricing.html"
+    />
+    <meta name="theme-color" content="#4C0C14" />
+    <style>
+      :root {
+        --maroon: #4c0c14;
+        --cream: #f6efe7;
+        --ink: #121212;
+        --muted: #475569;
+        --line: rgba(18, 18, 18, 0.14);
+        --radius: 16px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Arial,
+          "Noto Sans",
+          "Liberation Sans",
+          sans-serif;
+        color: var(--ink);
+        background: linear-gradient(180deg, #fff 0%, var(--cream) 100%);
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 22px 18px 42px;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        border: 1px solid rgba(18, 18, 18, 0.1);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.88);
+        padding: 16px 16px;
+      }
+      .brand {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-weight: 900;
+        letter-spacing: 0.2px;
+        text-decoration: none;
+      }
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 999px;
+        background: var(--maroon);
+        box-shadow: 0 0 0 6px rgba(76, 12, 20, 0.1);
+      }
+      h1 {
+        margin: 8px 0 6px;
+        font-size: 26px;
+        letter-spacing: -0.3px;
+      }
+      .kicker {
+        font-size: 12px;
+        color: rgba(18, 18, 18, 0.62);
+      }
+      .meta {
+        font-size: 13px;
+        color: rgba(18, 18, 18, 0.72);
+        line-height: 1.4;
+      }
+      .meta strong {
+        color: var(--maroon);
+      }
+      .actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(76, 12, 20, 0.22);
+        background: rgba(76, 12, 20, 0.06);
+        color: var(--maroon);
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+      .btn.primary {
+        background: var(--maroon);
+        color: #fff;
+        border-color: var(--maroon);
+      }
+      .sheet {
+        margin-top: 16px;
+        display: grid;
+        gap: 14px;
+      }
+      .card {
+        border: 1px solid rgba(18, 18, 18, 0.1);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.88);
+        padding: 16px;
+      }
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        border-radius: 12px;
+      }
+      th,
+      td {
+        padding: 10px 10px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(18, 18, 18, 0.68);
+        background: rgba(246, 239, 231, 0.65);
+      }
+      tr:last-child td {
+        border-bottom: 0;
+      }
+      td {
+        font-size: 14px;
+        line-height: 1.45;
+        color: rgba(18, 18, 18, 0.8);
+      }
+      .yes {
+        font-weight: 900;
+        color: var(--maroon);
+      }
+      .small {
+        font-size: 12px;
+        color: rgba(18, 18, 18, 0.64);
+        line-height: 1.4;
+      }
+      .two {
+        display: grid;
+        gap: 14px;
+      }
+      @media (min-width: 980px) {
+        .two {
+          grid-template-columns: 1.2fr 0.8fr;
+        }
+      }
+      ul {
+        margin: 0;
+        padding-left: 18px;
+        color: rgba(18, 18, 18, 0.78);
+        line-height: 1.55;
+      }
+      li {
+        margin: 6px 0;
+      }
+      .callout {
+        border: 1px solid rgba(76, 12, 20, 0.22);
+        background: rgba(76, 12, 20, 0.06);
+        border-radius: 14px;
+        padding: 12px 12px;
+      }
+      .callout strong {
+        color: var(--maroon);
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        .btn {
+          display: none !important;
+        }
+        .wrap {
+          padding: 0;
+        }
+        .top {
+          border: 0;
+          padding: 0;
+          background: #fff;
+        }
+        .card {
+          border: 0;
+          background: #fff;
+          padding: 0;
+        }
+        th {
+          background: #fff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div>
+          <a class="brand" href="/" aria-label="Benson Home Solutions Home">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Benson Home Solutions</span>
+          </a>
+          <h1>Residential Maintenance Plans — Pricing Sheet</h1>
+          <div class="kicker">
+            Licensed, Bonded &amp; Insured • Oregon CCB# 258533 • (541) 321-5115
+          </div>
+          <div class="meta" style="margin-top: 10px">
+            <strong>Designed for:</strong> predictable upkeep, fast small-job
+            response, and documentation (photos + logs).<br />
+            <strong>Enroll here:</strong> /services/residential-maintenance
+          </div>
+        </div>
+        <div class="actions" aria-label="Actions">
+          <a class="btn primary" href="/services/residential-maintenance"
+            >Request Membership</a
+          >
+          <a class="btn" href="/landing/residential-maintenance-programs.html"
+            >Landing Page</a
+          >
+          <a class="btn" href="tel:5413215115">Call</a>
+        </div>
+      </div>
+
+      <div class="sheet">
+        <div class="card">
+          <h2>Tier Comparison (Typical Inclusions)</h2>
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 40%">Feature</th>
+                <th style="width: 20%">Basic</th>
+                <th style="width: 20%">Plus</th>
+                <th style="width: 20%">Priority</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Seasonal maintenance checklist + scheduled service window
+                </td>
+                <td class="yes">Yes</td>
+                <td class="yes">Yes</td>
+                <td class="yes">Yes</td>
+              </tr>
+              <tr>
+                <td>Photo documentation + maintenance log</td>
+                <td class="yes">Yes</td>
+                <td class="yes">Expanded</td>
+                <td class="yes">Expanded</td>
+              </tr>
+              <tr>
+                <td>Priority scheduling (non-emergency)</td>
+                <td>Standard</td>
+                <td class="yes">Priority</td>
+                <td class="yes">Highest</td>
+              </tr>
+              <tr>
+                <td>Caulking &amp; sealing touch-ups (limits apply)</td>
+                <td>—</td>
+                <td class="yes">Included</td>
+                <td class="yes">Included</td>
+              </tr>
+              <tr>
+                <td>Smoke/CO detector service</td>
+                <td>—</td>
+                <td class="yes">Included</td>
+                <td class="yes">Included</td>
+              </tr>
+              <tr>
+                <td>HVAC filter program support</td>
+                <td>—</td>
+                <td class="yes">Included</td>
+                <td class="yes">Included</td>
+              </tr>
+              <tr>
+                <td>Included visits / service calls</td>
+                <td>Base</td>
+                <td>More</td>
+                <td class="yes">Most</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="small" style="margin-top: 10px">
+            Notes: Exact limits vary by home size/age and service area. Add-on
+            work is always quoted clearly before proceeding.
+          </div>
+        </div>
+
+        <div class="two">
+          <div class="card">
+            <h2>High-Demand Tasks (Common Member Requests)</h2>
+            <ul>
+              <li>Gutter cleaning and drainage checks</li>
+              <li>Bath/kitchen caulk refresh and sealing touch-ups</li>
+              <li>Minor drywall patching and paint touch-ups</li>
+              <li>Smoke/CO detector swaps and safety checklist</li>
+              <li>HVAC filter reminders, replacements, and documentation</li>
+            </ul>
+            <div class="callout" style="margin-top: 12px">
+              <strong>Why this works:</strong> members get one provider,
+              predictable pricing, and a home record for future repairs,
+              remodels, or insurance documentation.
+            </div>
+          </div>
+
+          <div class="card">
+            <h2>Add-Ons &amp; Boundaries</h2>
+            <ul>
+              <li>
+                Member pricing applies to small jobs outside tier inclusions
+              </li>
+              <li>
+                Material costs billed at transparent rates (or
+                customer-supplied)
+              </li>
+              <li>Larger scopes (remodels/mitigation) quoted separately</li>
+              <li>Safety and code compliance always take priority</li>
+            </ul>
+            <div class="small" style="margin-top: 12px">
+              For exact pricing, we confirm service area, home basics, and
+              schedule. Use the membership form to start.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Enrollment</h2>
+          <div class="small">
+            1) Open /services/residential-maintenance and select a tier.<br />
+            2) Tell us your home basics and preferred timing.<br />
+            3) We confirm details, set the first service window, and begin
+            documentation.<br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

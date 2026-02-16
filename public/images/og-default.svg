@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Benson Home Solutions Open Graph image">
+  <defs>
+    <linearGradient id="og" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2b0b10" />
+      <stop offset="100%" stop-color="#6e2b2b" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og)" />
+  <rect x="70" y="70" width="1060" height="490" rx="28" fill="#f7f2e9" opacity="0.12" />
+  <text x="90" y="220" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#f7f2e9">
+    Benson Home Solutions
+  </text>
+  <text x="90" y="280" font-family="Arial, sans-serif" font-size="24" fill="#e6dcc9">
+    Oregon Construction & Restoration
+  </text>
+  <text x="90" y="360" font-family="Arial, sans-serif" font-size="20" fill="#f7f2e9">
+    Water Damage • Mold Remediation • Remodeling • Maintenance Programs
+  </text>
+</svg>

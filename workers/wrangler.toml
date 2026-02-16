@@ -1,0 +1,10 @@
+name = "benson-edge"
+main = "src/index.js"
+compatibility_date = "2025-01-15"
+
+[vars]
+SUPABASE_URL = ""
+SUPABASE_ANON_KEY = ""
+STRIPE_SECRET_KEY = ""
+RESEND_API_KEY = ""
+RESEND_FROM_EMAIL = ""

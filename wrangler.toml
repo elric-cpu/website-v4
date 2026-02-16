@@ -1,0 +1,6 @@
+name = "benson-pages"
+compatibility_date = "2025-01-15"
+pages_build_output_dir = "dist"
+
+[vars]
+SKIP_PRERENDER = "1"

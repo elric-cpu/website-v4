@@ -1,0 +1,9 @@
+Feature/Page,Journey (name),Role(s),Preconditions (state),Steps (short),Expected result,Negative cases (list),Test level (unit/integration/e2e/manual),Automation status,Link to test file/spec,Priority (P0/P1/P2)
+Commercial agreements,Lead funnel submit,public,none,Fill required fields -> Submit,Success toast + submit payload,Missing required fields,e2e,Automated,e2e/public-lead.spec.ts,P0
+Auth,Signup/login,public -> client,none,Register -> Login,Route to client portal,Wrong password,e2e,Automated,e2e/auth.spec.ts,P0
+Auth,Session restore,client,session present,Reload page,Session persists,Expired token,e2e,Automated,e2e/auth.spec.ts,P0
+Client portal,Documents CRUD,client,logged in,Upload -> list -> delete,Toast + list updates,Upload without file,e2e,Automated,e2e/portal-client-crud.spec.ts,P0
+Permissions,Role gate,client/subcontractor,logged in,Visit wrong portal,Redirect to correct portal,Direct URL access,unit,Automated,tests/unit/ProtectedRoute.spec.tsx,P1
+Supabase,Client docs RLS,client,seeded data,Fetch docs,Only own docs returned,Other tenant data,integration,Automated,tests/integration/portalData.spec.ts,P0
+Validation,Email/phone,public,none,Validate inputs,Reject invalid formats,XSS input,unit,Automated,tests/unit/validators.spec.ts,P1
+Lead submit,Endpoint fallback,public,env missing,Submit lead,Console fallback,None,unit,Automated,tests/unit/submitCommercialAgreementLead.spec.ts,P1
